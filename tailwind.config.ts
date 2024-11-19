@@ -17,7 +17,7 @@ export default {
 			},
 		},
 		backgroundImage: {
-			hero: "url('/images/Hero.jpg')",
+			hero: "url('/Hero.jpg')",
 		},
 		screens: {
 			tablet: '640px',
