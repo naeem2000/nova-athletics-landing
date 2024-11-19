@@ -16,6 +16,9 @@ export default {
 				'off-white': 'var(--off-white)',
 			},
 		},
+		backgroundImage: {
+			hero: "url('/Hero.jpg')",
+		},
 		screens: {
 			tablet: '640px',
 			laptop: '1024px',

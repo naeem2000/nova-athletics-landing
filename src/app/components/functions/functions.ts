@@ -1,5 +1,5 @@
-import { Delay } from '@/app/modules';
 import { useEffect, useState } from 'react';
+import { Delay } from '@/modules';
 
 //reset delay on page load
 export const useResetAnimate = () => {
