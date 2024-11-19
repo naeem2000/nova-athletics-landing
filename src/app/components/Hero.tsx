@@ -7,7 +7,7 @@ export default function Hero() {
 	const { delay } = useResetAnimate();
 
 	const bgStyles: string =
-		"bg-[url('/images/Hero.jpg')] h-[516px] bg-top bg-cover bg-no-repeat rounded-[64px] max-w-[916px] w-full";
+		'bg-hero h-[516px] bg-top bg-cover bg-no-repeat rounded-[64px] max-w-[916px] w-full';
 
 	return (
 		<motion.div

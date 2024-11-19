@@ -1,4 +1,4 @@
-import { MotionStyles } from '@/app/modules';
+import { MotionStyles } from '@/modules';
 
 export const motionStyles: MotionStyles = {
 	initial: { opacity: 0 },
