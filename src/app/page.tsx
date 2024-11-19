@@ -1,9 +1,13 @@
+import Logos from './components/Logos';
 import Hero from './components/Hero';
+import Nav from './components/Nav';
 
 export default function Home() {
 	return (
-		<main className='flex items-center justify-center'>
+		<main>
+			<Nav />
 			<Hero />
+			<Logos />
 		</main>
 	);
 }

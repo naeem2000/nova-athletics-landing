@@ -5,15 +5,43 @@
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
+	--black: #000000;
+	--off-white: #f7f7f7;
+	--grey: #888888;
+	--border-grey: #e6e6e6;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 body {
 	background: var(--background);
-	overflow: hidden;
+}
+
+.max-width {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+button {
+	color: var(--background);
+	padding: 12px 15px;
+	border-radius: 8px;
+	background-color: var(--black);
+	transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+	box-shadow: 0px 4px 10px 15px rgba(0, 0, 0, 0.13);
+}
+
+@media screen and (max-width: 1024px) {
+	button {
+		padding: 8px 12px;
+	}
 }
