@@ -10,3 +10,8 @@ export interface MotionStyles {
 	whileInView: { opacity: number };
 	transition: { duration: number };
 }
+
+export type NavItems = {
+	label: string;
+	link: string;
+}[];
