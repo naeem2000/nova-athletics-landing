@@ -36,7 +36,9 @@ export default function Hero() {
 				<p className='text-gray text-2xl mb-5 text-center'>
 					The Best Gymwear in Cape Town
 				</p>
-				<button>See more</button>
+				<a href='#about'>
+					<button>See more</button>
+				</a>
 			</motion.div>
 		</motion.div>
 	);

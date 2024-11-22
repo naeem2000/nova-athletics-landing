@@ -42,7 +42,7 @@ export default function Nav() {
 				</div>
 			</motion.div>
 			<div
-				className={`fixed block laptop:hidden w-4/6 h-screen top-0 transform transition-transform ease-linear duration-300 -translate-x-[300px] bg-black z-50 text-white ${
+				className={`fixed block laptop:hidden w-4/6 h-screen top-0 transform transition-transform ease-linear duration-300 -translate-x-[900px] bg-black z-50 text-white ${
 					isNavOpen && '!translate-x-0'
 				}`}
 			>
