@@ -52,16 +52,15 @@ button:hover {
 	}
 }
 
-.css-1808mag-MuiPaper-root-MuiAccordion-root:last-of-type {
+.MuiAccordion-root:last-of-type {
 	border-radius: 0px !important;
 	box-shadow: none !important;
 }
 
-.css-jineix-MuiButtonBase-root-MuiAccordionSummary-root {
+.MuiAccordionSummary-root {
 	flex-direction: row-reverse !important;
 }
 
-.css-jineix-MuiButtonBase-root-MuiAccordionSummary-root
-	> .css-1wqf3nl-MuiAccordionSummary-expandIconWrapper {
+.MuiAccordionSummary-root > .MuiAccordionSummary-expandIconWrapper {
 	margin-right: 24px !important;
 }
