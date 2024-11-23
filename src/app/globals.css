@@ -52,6 +52,11 @@ button:hover {
 	}
 }
 
+.css-1808mag-MuiPaper-root-MuiAccordion-root:last-of-type {
+	border-radius: 0px !important;
+	box-shadow: none;
+}
+
 .css-jineix-MuiButtonBase-root-MuiAccordionSummary-root {
 	flex-direction: row-reverse !important;
 }

@@ -4,18 +4,29 @@ import { motionStyles } from './functions/constants';
 import AccordionComponent from './Accordion';
 import { motion } from 'motion/react';
 import React from 'react';
+import { accordionItems } from '@/data';
 
 export default function Faq() {
 	return (
-		<motion.div {...motionStyles} className='max-width'>
-			<div className='flex items-center justify-center flex-col mt-24 w-full'>
-				<h2 className='text-5xl font-bold'>FAQ</h2>
+		<motion.div {...motionStyles} className='max-width px-8 py-14'>
+			<div className='flex items-center justify-center flex-col w-full'>
+				<h2 className='text-5xl font-bold mb-14'>FAQ</h2>
 			</div>
-			<AccordionComponent
-				heading='test'
-				text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-					malesuada lacus ex, sit amet blandit leo lobortis eget.'
-			/>
+			<div className='flex items-center justify-center flex-col '>
+				<div className='bg-off-white px-5 py-5 w-max rounded-2xl'>
+					{accordionItems.map((items, index) => {
+						return (
+							<div key={index}>
+								<AccordionComponent
+									index={index}
+									heading={items.heading}
+									text={items.text}
+								/>
+							</div>
+						);
+					})}
+				</div>
+			</div>
 		</motion.div>
 	);
 }

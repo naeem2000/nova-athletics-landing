@@ -42,15 +42,15 @@ export default function Nav() {
 				</div>
 			</motion.div>
 			<div
-				className={`fixed block laptop:hidden w-4/6 h-screen top-0 transform transition-transform ease-linear duration-300 -translate-x-[900px] bg-black z-50 text-white ${
+				className={`fixed block laptop:hidden w-4/6 h-screen top-0 bottom-0 transform transition-transform ease-in-out duration-500 -translate-x-full bg-black z-50 text-white ${
 					isNavOpen && '!translate-x-0'
 				}`}
 			>
 				<div className='border-b border-white px-5 pt-5 pb-3'>
 					<span className='text-lg'>NOVA ATHLETICS</span>
 				</div>
-				<div className='p-5 flex justify-between flex-col h-full'>
-					<div className='flex flex-col h-full'>
+				<div className='p-5 flex justify-between flex-col'>
+					<div className='flex flex-col'>
 						{navItems.map((item, index) => {
 							return (
 								<Link
@@ -64,7 +64,7 @@ export default function Nav() {
 							);
 						})}
 					</div>
-					<p>awe</p>
+					<p className='text-white'>awe</p>
 				</div>
 			</div>
 		</div>
