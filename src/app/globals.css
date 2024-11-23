@@ -51,3 +51,12 @@ button:hover {
 		padding: 8px 12px;
 	}
 }
+
+.css-jineix-MuiButtonBase-root-MuiAccordionSummary-root {
+	flex-direction: row-reverse !important;
+}
+
+.css-jineix-MuiButtonBase-root-MuiAccordionSummary-root
+	> .css-1wqf3nl-MuiAccordionSummary-expandIconWrapper {
+	margin-right: 24px !important;
+}

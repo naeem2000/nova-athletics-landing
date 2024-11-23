@@ -1,7 +1,7 @@
 'use client';
+import { useResetAnimate } from './functions/functions';
 import { motion } from 'motion/react';
 import React from 'react';
-import { useResetAnimate } from './functions/functions';
 
 export default function Hero() {
 	const { delay } = useResetAnimate();

@@ -1,9 +1,9 @@
 'use client';
 
-import { navItems } from '@/data';
 import { useResetAnimate, useShowNav } from './functions/functions';
 import { Divide as Hamburger } from 'hamburger-react';
 import { motion } from 'motion/react';
+import { navItems } from '@/data';
 import Link from 'next/link';
 import React from 'react';
 
