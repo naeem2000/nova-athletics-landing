@@ -15,3 +15,8 @@ export type NavItems = {
 	label: string;
 	link: string;
 }[];
+
+export type AccordionItems = {
+	heading: string;
+	text: string;
+}[];

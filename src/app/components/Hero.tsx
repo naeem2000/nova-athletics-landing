@@ -1,7 +1,7 @@
 'use client';
+import { useResetAnimate } from './functions/functions';
 import { motion } from 'motion/react';
 import React from 'react';
-import { useResetAnimate } from './functions/functions';
 
 export default function Hero() {
 	const { delay } = useResetAnimate();
@@ -14,7 +14,7 @@ export default function Hero() {
 			initial={{ opacity: 0 }}
 			whileInView={{ opacity: 1 }}
 			transition={{ duration: 1, delay: delay.hero }}
-			className='border-t border-border-grey !mt-1 max-width px-5 laptop:p-0'
+			className='border-t border-border-grey !mt-1 max-width px-8 laptop:p-0'
 		>
 			<h1 className='mt-12 laptop:mt-24 text-4xl laptop:text-7xl laptop:tracking-[-3.8px] font-bold text-center mb-12'>
 				NOVA ATHLETICS

@@ -1,7 +1,7 @@
 'use client';
-import React from 'react';
 import { motionStyles } from './functions/constants';
 import { motion } from 'motion/react';
+import React from 'react';
 
 export default function Logos() {
 	return (
