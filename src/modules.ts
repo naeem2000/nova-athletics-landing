@@ -20,3 +20,10 @@ export type AccordionItems = {
 	heading: string;
 	text: string;
 }[];
+
+export interface Message {
+	name: string;
+	email: string;
+	enquiry: string;
+	message: string;
+}
