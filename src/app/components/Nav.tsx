@@ -24,8 +24,6 @@ export default function Nav() {
 				>
 					<span className='text-lg'>NOVA ATHLETICS</span>
 					<div className='hidden laptop:flex text-gray ml-auto'>
-						{' '}
-						{/* Use ml-auto for right-alignment */}
 						{navItems.map((item, index) => {
 							return (
 								<Link
@@ -56,7 +54,6 @@ export default function Nav() {
 					<span className='text-lg'>NOVA ATHLETICS</span>
 				</div>
 				<div className='p-5 flex flex-col h-[90%] justify-between'>
-					{/* Navigation links */}
 					<div className='flex flex-col'>
 						{navItems.map((item, index) => {
 							return (
@@ -71,8 +68,6 @@ export default function Nav() {
 							);
 						})}
 					</div>
-
-					{/* Social Links Section (pushed to the bottom) */}
 					<div className='mt-auto -mb-5'>
 						<div className='flex space-x-4'>
 							<Link href={''} target='_blank'>
