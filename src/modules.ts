@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface Delay {
 	nav: number;
 	hero: number;
@@ -14,6 +16,12 @@ export interface MotionStyles {
 export type NavItems = {
 	label: string;
 	link: string;
+	target: string;
+}[];
+
+export type SocialItems = {
+	icon: ReactNode;
+	url: string;
 }[];
 
 export type AccordionItems = {
@@ -24,6 +32,12 @@ export type AccordionItems = {
 export interface Message {
 	name: string;
 	email: string;
-	enquiry: string;
+	enquiry: Enquiry | '';
 	message: string;
+}
+
+export enum Enquiry {
+	account = 'account',
+	billing = 'billing',
+	deliveries = 'deliveries',
 }

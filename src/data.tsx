@@ -1,17 +1,46 @@
-import { AccordionItems, NavItems } from './modules';
+import { AccordionItems, NavItems, SocialItems } from './modules';
+import { Facebook, Instagram, WhatsApp } from '@mui/icons-material';
 
 export const navItems: NavItems = [
 	{
+		label: 'Home',
+		link: '/',
+		target: '',
+	},
+	{
 		label: 'Store',
-		link: 'www.google.com',
+		link: 'https://www.google.com',
+		target: '_blank',
 	},
 	{
 		label: 'Catalogue',
-		link: 'www.google.com',
+		link: 'https://www.google.com',
+		target: '_blank',
 	},
 	{
 		label: 'Brands',
-		link: 'www.google.com',
+		link: 'https://www.google.com',
+		target: '_blank',
+	},
+	{
+		label: 'Contact',
+		link: '/contact',
+		target: '',
+	},
+];
+
+export const socials: SocialItems = [
+	{
+		icon: <Instagram />,
+		url: 'https://www.google.com',
+	},
+	{
+		icon: <Facebook />,
+		url: 'https://www.google.com',
+	},
+	{
+		icon: <WhatsApp />,
+		url: 'https://www.google.com',
 	},
 ];
 
