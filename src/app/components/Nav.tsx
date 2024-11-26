@@ -2,11 +2,10 @@
 
 import { useResetAnimate, useShowNav } from './functions/functions';
 import { Divide as Hamburger } from 'hamburger-react';
+import { navItems, socials } from '@/data';
 import { motion } from 'motion/react';
-import { navItems } from '@/data';
 import Link from 'next/link';
 import React from 'react';
-import { Facebook, Instagram, WhatsApp } from '@mui/icons-material';
 
 export default function Nav() {
 	const { delay } = useResetAnimate();
@@ -27,12 +26,13 @@ export default function Nav() {
 						{navItems.map((item, index) => {
 							return (
 								<Link
+									onClick={() => setIsNavOpen(false)}
 									key={index}
 									className={`${linkStyle} ${
 										index === navItems.length - 1 && '!mr-0'
 									}`}
 									href={item.link}
-									target='_blank'
+									target={item.target}
 								>
 									{item.label}
 								</Link>
@@ -58,10 +58,11 @@ export default function Nav() {
 						{navItems.map((item, index) => {
 							return (
 								<Link
+									onClick={() => setIsNavOpen(false)}
 									key={index}
 									className={`${linkStyle} mb-5`}
 									href={item.link}
-									target='_blank'
+									target={item.target}
 								>
 									{item.label}
 								</Link>
@@ -70,15 +71,13 @@ export default function Nav() {
 					</div>
 					<div className='mt-auto -mb-5'>
 						<div className='flex space-x-4'>
-							<Link href={''} target='_blank'>
-								<Instagram />
-							</Link>
-							<Link href={''} target='_blank'>
-								<Facebook />
-							</Link>
-							<Link href={''} target='_blank'>
-								<WhatsApp />
-							</Link>
+							{socials.map((item, index) => {
+								return (
+									<Link key={index} href={item.url} target='_blank'>
+										{item.icon}
+									</Link>
+								);
+							})}
 						</div>
 					</div>
 				</div>

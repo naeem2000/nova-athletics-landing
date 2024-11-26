@@ -11,8 +11,10 @@
 	"dependencies": {
 		"@emotion/react": "^11.13.5",
 		"@emotion/styled": "^11.13.5",
+		"@formspree/react": "^2.5.1",
 		"@mui/icons-material": "^6.1.8",
 		"@mui/material": "^6.1.8",
+		"dotenv": "^16.4.5",
 		"hamburger-react": "^2.5.1",
 		"motion": "^11.11.17",
 		"next": "15.0.3",
