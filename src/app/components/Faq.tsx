@@ -8,7 +8,7 @@ import { accordionItems } from '@/data';
 
 export default function Faq() {
 	return (
-		<motion.div {...motionStyles} className='max-width px-8 py-14'>
+		<motion.div {...motionStyles} className='max-width px-8 pb-0 py-14'>
 			<div className='flex items-center justify-center flex-col w-full'>
 				<h2 className='text-5xl font-bold mb-14'>FAQ</h2>
 			</div>

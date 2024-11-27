@@ -9,6 +9,8 @@
 	--off-white: #f7f7f7;
 	--grey: #888888;
 	--border-grey: #e6e6e6;
+	--blue: #001122;
+	--footer-black: #222222;
 }
 
 * {
@@ -36,20 +38,17 @@ img {
 
 button {
 	color: var(--background);
-	padding: 12px 15px;
+	height: 50px;
+	min-width: 120px;
 	border-radius: 8px;
 	background-color: var(--black);
 	transition: box-shadow 0.3s ease;
+	font-weight: 700;
+	padding: 0 20px;
 }
 
 button:hover {
 	box-shadow: 0px 1px 10px 10px rgba(0, 0, 0, 0.116);
-}
-
-@media screen and (max-width: 1024px) {
-	button {
-		padding: 10px 13px;
-	}
 }
 
 .MuiAccordion-root:last-of-type {

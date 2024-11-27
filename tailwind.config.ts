@@ -14,6 +14,8 @@ export default {
 				gray: 'var(--grey)',
 				'border-grey': 'var(--border-grey)',
 				'off-white': 'var(--off-white)',
+				blue: 'var(--blue)',
+				'footer-black': 'var(--footer-black)',
 			},
 		},
 		backgroundImage: {

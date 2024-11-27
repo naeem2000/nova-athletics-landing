@@ -2,6 +2,7 @@
 import { useResetAnimate } from './functions/functions';
 import { motion } from 'motion/react';
 import React from 'react';
+import Button from './Button';
 
 export default function Hero() {
 	const { delay } = useResetAnimate();
@@ -37,7 +38,7 @@ export default function Hero() {
 					The Best Gymwear in Cape Town
 				</p>
 				<a href='#about'>
-					<button>See more</button>
+					<Button text='See more' />
 				</a>
 			</motion.div>
 		</motion.div>
