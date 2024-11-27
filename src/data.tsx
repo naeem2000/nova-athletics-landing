@@ -31,15 +31,15 @@ export const navItems: NavItems = [
 
 export const socials: SocialItems = [
 	{
-		icon: <Instagram />,
+		icon: <Instagram fontSize='medium' />,
 		url: 'https://www.google.com',
 	},
 	{
-		icon: <Facebook />,
+		icon: <Facebook fontSize='medium' />,
 		url: 'https://www.google.com',
 	},
 	{
-		icon: <WhatsApp />,
+		icon: <WhatsApp fontSize='medium' />,
 		url: 'https://www.google.com',
 	},
 ];
