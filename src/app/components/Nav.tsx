@@ -13,8 +13,8 @@ export default function Nav() {
 	const linkStyle: string = 'mr-5 hover:underline';
 
 	return (
-		<div>
-			<div className='flex justify-between max-width p-7 laptop:p-5 border-b border-border-grey'>
+		<div className='border-b border-border-grey'>
+			<div className='flex justify-between max-width p-7 laptop:p-5'>
 				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}

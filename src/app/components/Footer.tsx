@@ -4,8 +4,8 @@ import React from 'react';
 
 export default function Footer() {
 	return (
-		<footer className='max-width bg-footer-black text-white'>
-			<div className='flex items-center justify-between w-full p-8 laptop:p-12'>
+		<footer className=' bg-footer-black text-white'>
+			<div className='max-width flex items-center justify-between w-full p-8 laptop:p-12'>
 				<p className='font-bold'>© Framer Inc. 2024</p>
 				<div>
 					{socials.map((item, index) => {
