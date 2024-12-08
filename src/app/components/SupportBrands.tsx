@@ -7,7 +7,7 @@ export default function SupportBrands() {
 			<h2 className='text-center text-3xl laptop:text-6xl font-bold leading-tight'>
 				Support Local Brands Today
 			</h2>
-			<Button className='mt-7 text-base' text='See Brands' />
+			<Button className='difference mt-7 text-base' text='See Brands' />
 		</div>
 	);
 }
