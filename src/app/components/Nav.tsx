@@ -1,24 +1,23 @@
 'use client';
 
-import { useResetAnimate, useShowNav } from './functions/functions';
 import { Divide as Hamburger } from 'hamburger-react';
+import { useShowNav } from './functions/functions';
 import { navItems, socials } from '@/data';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import React from 'react';
 
 export default function Nav() {
-	const { delay } = useResetAnimate();
 	const { isNavOpen, setIsNavOpen } = useShowNav();
 	const linkStyle: string = 'mr-5 hover:underline';
 
 	return (
-		<div>
-			<div className='flex justify-between max-width p-7 laptop:p-5 border-b border-border-grey'>
+		<div className='border-b border-border-grey'>
+			<div className='flex justify-between max-width p-7 laptop:p-5'>
 				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
-					transition={{ duration: 1, delay: delay.nav }}
+					transition={{ duration: 1, delay: 0.5 }}
 					className='flex justify-between items-center w-full'
 				>
 					<span className='text-lg'>NOVA ATHLETICS</span>
@@ -40,9 +39,13 @@ export default function Nav() {
 						})}
 					</div>
 				</motion.div>
-
-				<div className={`z-10 block laptop:hidden fixed top-5 right-5`}>
-					<Hamburger onToggle={setIsNavOpen} toggled={isNavOpen} />
+				<div className='z-10 block laptop:hidden fixed top-5 right-5 bg-white rounded-md mix-blend-difference'>
+					<Hamburger
+						onToggle={setIsNavOpen}
+						toggled={isNavOpen}
+						color='black'
+						size={23}
+					/>
 				</div>
 			</div>
 			<div

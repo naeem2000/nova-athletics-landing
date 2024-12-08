@@ -2,9 +2,9 @@
 
 import { motionStyles } from './functions/constants';
 import AccordionComponent from './Accordion';
+import { accordionItems } from '@/data';
 import { motion } from 'motion/react';
 import React from 'react';
-import { accordionItems } from '@/data';
 
 export default function Faq() {
 	return (
