@@ -18,9 +18,6 @@ export default {
 				'footer-black': 'var(--footer-black)',
 			},
 		},
-		backgroundImage: {
-			hero: "url('/Hero.jpg')",
-		},
 		screens: {
 			tablet: '640px',
 			laptop: '1024px',
