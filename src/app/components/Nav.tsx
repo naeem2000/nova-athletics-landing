@@ -39,7 +39,6 @@ export default function Nav() {
 						})}
 					</div>
 				</motion.div>
-
 				<div className='z-10 block laptop:hidden fixed top-5 right-5 bg-white rounded-md mix-blend-difference'>
 					<Hamburger
 						onToggle={setIsNavOpen}
