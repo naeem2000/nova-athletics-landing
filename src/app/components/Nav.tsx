@@ -1,7 +1,7 @@
 'use client';
 
-import { useShowNav } from './functions/functions';
 import { Divide as Hamburger } from 'hamburger-react';
+import { useShowNav } from './functions/functions';
 import { navItems, socials } from '@/data';
 import { motion } from 'motion/react';
 import Link from 'next/link';
@@ -40,8 +40,13 @@ export default function Nav() {
 					</div>
 				</motion.div>
 
-				<div className={`z-10 block laptop:hidden fixed top-5 right-5`}>
-					<Hamburger onToggle={setIsNavOpen} toggled={isNavOpen} />
+				<div className='z-10 block laptop:hidden fixed top-5 right-5 bg-white rounded-md mix-blend-difference'>
+					<Hamburger
+						onToggle={setIsNavOpen}
+						toggled={isNavOpen}
+						color='black'
+						size={23}
+					/>
 				</div>
 			</div>
 			<div

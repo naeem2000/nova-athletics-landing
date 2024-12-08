@@ -1,10 +1,10 @@
 'use client';
-import { typography } from '@/data';
 import { motionStyles } from './functions/constants';
 import { motion } from 'motion/react';
+import { typography } from '@/data';
 import Image from 'next/image';
-import React from 'react';
 import Button from './Button';
+import React from 'react';
 
 export default function About() {
 	return (

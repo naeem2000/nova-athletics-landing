@@ -2,7 +2,9 @@
 
 import { motionStyles } from '../components/functions/constants';
 import { Enquiry, Message } from '@/modules';
+import { Mail } from '@mui/icons-material';
 import { useForm } from '@formspree/react';
+import Button from '../components/Button';
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
@@ -13,8 +15,6 @@ import {
 	MenuItem,
 	Select,
 } from '@mui/material';
-import { Mail } from '@mui/icons-material';
-import Button from '../components/Button';
 
 export default function Contact() {
 	const [state, handleSubmit] = useForm('mdkowagk');
