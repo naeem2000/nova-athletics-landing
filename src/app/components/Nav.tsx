@@ -1,6 +1,6 @@
 'use client';
 
-import { useResetAnimate, useShowNav } from './functions/functions';
+import { useShowNav } from './functions/functions';
 import { Divide as Hamburger } from 'hamburger-react';
 import { navItems, socials } from '@/data';
 import { motion } from 'motion/react';
@@ -8,7 +8,6 @@ import Link from 'next/link';
 import React from 'react';
 
 export default function Nav() {
-	const { delay } = useResetAnimate();
 	const { isNavOpen, setIsNavOpen } = useShowNav();
 	const linkStyle: string = 'mr-5 hover:underline';
 
@@ -18,7 +17,7 @@ export default function Nav() {
 				<motion.div
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
-					transition={{ duration: 1, delay: delay.nav }}
+					transition={{ duration: 1, delay: 0.5 }}
 					className='flex justify-between items-center w-full'
 				>
 					<span className='text-lg'>NOVA ATHLETICS</span>

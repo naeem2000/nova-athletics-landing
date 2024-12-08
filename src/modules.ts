@@ -1,12 +1,5 @@
 import { ReactNode } from 'react';
 
-export interface Delay {
-	nav: number;
-	hero: number;
-	heroImage: number;
-	heroImageText: number;
-}
-
 export interface MotionStyles {
 	initial: { opacity: number };
 	whileInView: { opacity: number };

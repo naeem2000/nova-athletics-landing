@@ -10,7 +10,6 @@ export default function About() {
 	return (
 		<div id='about' className='bg-off-white px-8 py-16 laptop:py-24'>
 			<motion.div {...motionStyles} className='max-width'>
-				<h2 className='text-center text-5xl mb-20'>Coming soon</h2>
 				<div className='grid grid-cols-1 tablet:grid-cols-2 gap-5 laptop:gap-10'>
 					<div className='mb-10 laptop:mb-0 justify-self-start laptop:justify-self-end'>
 						<Image
