@@ -3,7 +3,7 @@ import React from 'react';
 export default function VideoComponent() {
 	return (
 		<video
-			className='absolute inset-0 w-full h-full laptop:h-max object-cover -z-10'
+			className='absolute inset-0 w-full h-full object-cover -z-10'
 			autoPlay
 			loop
 			muted

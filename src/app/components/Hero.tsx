@@ -16,7 +16,7 @@ export default function Hero() {
 						<VideoComponent />
 					</Suspense>
 					<div className='absolute inset-0 bg-black h-[100vh] opacity-50 -z-5' />
-					<div className='max-width flex items-center justify-center flex-col h-full  mb-16 laptop:mb-32 z-20 relative'>
+					<div className='max-width flex items-center justify-center flex-col h-full  mb-16 laptop:mb-32 z-20 relative mix-blend-difference'>
 						<h1 className='text-4xl laptop:text-8xl laptop:tracking-[-3.8px] font-bold text-center text-white'>
 							NOVA ATHLETICS
 						</h1>
