@@ -28,7 +28,7 @@ export default function Contact() {
 	return (
 		<motion.div {...motionStyles}>
 			{!state.succeeded ? (
-				<div className='max-width flex items-center justify-center flex-col px-8 py-20'>
+				<div className='max-width flex items-center justify-center flex-col px-8 py-20 laptop:h-screen'>
 					<h2 className='text-5xl font-bold mb-14'>Contact</h2>
 					<div className='flex items-center justify-center w-full max-w-[1100px] flex-col laptop:flex-row'>
 						<form onSubmit={handleSubmit} className='w-full laptop:w-1/2'>
