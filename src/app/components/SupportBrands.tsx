@@ -1,7 +1,7 @@
+import { motionStyles } from './functions/constants';
 import { motion } from 'motion/react';
 import Button from './Button';
 import React from 'react';
-import { motionStyles } from './functions/constants';
 
 export default function SupportBrands() {
 	return (

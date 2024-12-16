@@ -25,7 +25,11 @@ export default function About() {
 						<p className='max-w-full laptop:max-w-[476px] text-gray mt-5 text-xl laptop:text-2xl'>
 							{typography.about1}
 						</p>
-						<Button className='difference mt-5' text='Read more' />
+						<Button
+							className='difference mt-5 after:!bg-none after:content-none !text-white'
+							text='Find Out More'
+							arrow
+						/>
 					</div>
 				</div>
 			</motion.div>
@@ -36,7 +40,11 @@ export default function About() {
 						<p className='max-w-full laptop:max-w-[476px] text-gray mt-5 text-xl laptop:text-2xl'>
 							{typography.about2}
 						</p>
-						<Button className='difference mt-5' text='Read more' />
+						<Button
+							className='difference mt-5 after:!bg-none after:content-none !text-white'
+							text='Find Out More'
+							arrow
+						/>
 					</div>
 					<div className='order-1 laptop:order-2 mb-10 laptop:mb-0'>
 						<Image
