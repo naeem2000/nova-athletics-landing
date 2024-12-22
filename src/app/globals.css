@@ -54,6 +54,7 @@ button {
 	z-index: 1;
 	color: white;
 	background: var(--dark-blue);
+	border: 2px solid var(--dark-blue);
 }
 
 button:after {
@@ -72,6 +73,8 @@ button:after {
 
 button:hover {
 	color: rgb(0, 0, 0);
+	border: 2px solid var(--black);
+	transition: none;
 }
 
 button:hover:after {
@@ -86,6 +89,7 @@ button:active {
 
 button.difference {
 	color: var(--black);
+	border: 2px solid var(--white);
 }
 
 button.difference:after {
@@ -94,6 +98,7 @@ button.difference:after {
 
 button.difference:hover {
 	color: var(--white);
+	border: 2px solid var(--dark-blue);
 }
 
 .MuiAccordion-root:last-of-type {

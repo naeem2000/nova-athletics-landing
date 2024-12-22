@@ -8,6 +8,7 @@ import { navItems, socials } from '@/data';
 import Hamburger from 'hamburger-react';
 import React, { Suspense } from 'react';
 import { motion } from 'motion/react';
+import Image from 'next/image';
 import Button from './Button';
 import Link from 'next/link';
 
@@ -114,21 +115,32 @@ export default function Hero() {
 							initial={{ opacity: 0 }}
 							whileInView={{ opacity: 1 }}
 							transition={{ duration: 1, delay: animate }}
+							className='flex justify-between w-full'
 						>
-							<h1 className='text-5xl tablet:text-[100px] leading-snug laptop:leading-[117.19px] text-left text-white max-w-2xl'>
-								<strong>The Best Gym Wear In</strong> Cape Town
-							</h1>
-							<div className='flex mt-10 flex-col tablet:flex-row'>
-								<Link href='#'>
-									<Button
-										arrow={true}
-										text='Find out more'
-										className='mr-5 difference bg-white mb-4 tablet:mb-0'
-									/>
-								</Link>
-								<Link href='#about'>
-									<Button text='See more' />
-								</Link>
+							<div>
+								<h1 className='text-5xl tablet:text-[100px] leading-snug laptop:leading-[117.19px] text-left text-white max-w-2xl'>
+									<strong>The Best Gym Wear In</strong> Cape Town
+								</h1>
+								<div className='flex mt-10 flex-col tablet:flex-row'>
+									<Link href='#'>
+										<Button
+											arrow={true}
+											text='Find out more'
+											className='mr-5 difference bg-white mb-4 tablet:mb-0'
+										/>
+									</Link>
+									<Link href='#about'>
+										<Button text='See more' />
+									</Link>
+								</div>
+							</div>
+							<div className='self-end'>
+								<div className='bg-white w-[360px]  rounded-full'>
+									<div className='px-8 py-6'>
+										<p>@nova_athletics</p>
+									</div>
+									<Image />
+								</div>
 							</div>
 						</motion.div>
 					</div>
