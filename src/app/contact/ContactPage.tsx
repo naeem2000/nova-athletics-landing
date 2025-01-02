@@ -95,7 +95,7 @@ export default function Contact() {
 							<div className='flex items-center justify-center'>
 								<Button
 									type='submit'
-									className='difference mt-10 px-10'
+									className='mt-10 px-10'
 									isLoading={state.submitting}
 									text='Submit'
 								/>

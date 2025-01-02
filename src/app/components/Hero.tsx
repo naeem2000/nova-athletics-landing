@@ -5,17 +5,17 @@ import { SkeletonLoader } from './functions/constants';
 import 'react-loading-skeleton/dist/skeleton.css';
 import VideoComponent from './VideoComponent';
 import { navItems, socials } from '@/data';
-import Hamburger from 'hamburger-react';
 import React, { Suspense } from 'react';
+import ListingCard from './ListingCard';
+import Hamburger from 'hamburger-react';
 import { motion } from 'motion/react';
-import Image from 'next/image';
 import Button from './Button';
 import Link from 'next/link';
 
 export default function Hero() {
 	const { isNavOpen, setIsNavOpen } = useShowNav();
-	const { animate } = ResetHeroAnimate();
 	const linkStyle: string = 'mr-5 hover:underline';
+	const { animate } = ResetHeroAnimate();
 
 	const HeroNav = () => {
 		return (
@@ -110,7 +110,7 @@ export default function Hero() {
 						<VideoComponent />
 					</Suspense>
 					<div className='absolute inset-0 bg-black h-[100vh] opacity-50 -z-10' />
-					<div className='max-width flex items-start justify-center flex-col h-full z-20 relative px-7 laptop:pl-24'>
+					<div className='max-width flex items-start justify-center flex-col h-full z-20 relative px-7 laptop:px-24'>
 						<motion.div
 							initial={{ opacity: 0 }}
 							whileInView={{ opacity: 1 }}
@@ -134,13 +134,11 @@ export default function Hero() {
 									</Link>
 								</div>
 							</div>
-							<div className='self-end'>
-								<div className='bg-white w-[360px]  rounded-full'>
-									<div className='px-8 py-6'>
-										<p>@nova_athletics</p>
-									</div>
-									<Image />
-								</div>
+							<div className='self-end mt-24 hidden laptop:block'>
+								<ListingCard
+									hero={true}
+									img={'/products/ModelGive-Me-2-Month-1_1024x.jpg'}
+								/>
 							</div>
 						</motion.div>
 					</div>
