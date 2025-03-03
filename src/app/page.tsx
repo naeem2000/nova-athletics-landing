@@ -1,21 +1,10 @@
-'use client';
+import { Metadata } from 'next';
+import Home from './Home';
 
-import SupportBrands from './components/SupportBrands';
-import About from './components/About';
-import Logos from './components/Logos';
-import Hero from './components/Hero';
-import Faq from './components/Faq';
-import Explore from './components/Explore';
+export const metaData: Metadata = {
+	title: 'Nova Athletics | Home',
+};
 
-export default function Home() {
-	return (
-		<>
-			<Hero />
-			<Logos />
-			<About />
-			<Explore />
-			<Faq />
-			<SupportBrands />
-		</>
-	);
+export default function Page() {
+	return <Home />;
 }

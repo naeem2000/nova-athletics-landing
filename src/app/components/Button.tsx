@@ -1,6 +1,6 @@
+import EastIcon from '@mui/icons-material/East';
 import { BeatLoader } from 'react-spinners';
 import React from 'react';
-import EastIcon from '@mui/icons-material/East';
 
 type Props = {
 	className?: string;

@@ -18,6 +18,7 @@ import {
 
 export default function Contact() {
 	const [state, handleSubmit] = useForm('mdkowagk');
+
 	const [senderDetails, setSenderDetails] = useState<Message>({
 		name: '',
 		email: '',

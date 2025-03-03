@@ -13,7 +13,7 @@ const inter = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: 'Nova Athletics',
+	title: 'Nova Athletics | Home',
 	description:
 		"A one 'online' stop to get your finest fix of comfortable, high quality gym wear - Nova Athletics",
 	robots: 'index',

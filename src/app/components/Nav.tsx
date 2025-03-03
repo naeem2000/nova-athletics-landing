@@ -1,10 +1,10 @@
 'use client';
 
+import { AnimatePresence, motion } from 'motion/react';
 import { Divide as Hamburger } from 'hamburger-react';
 import { useShowNav } from './functions/functions';
 import { usePathname } from 'next/navigation';
 import { navItems, socials } from '@/data';
-import { motion } from 'motion/react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -51,43 +51,45 @@ export default function Nav() {
 						/>
 					</div>
 				</div>
-				<div
-					className={`fixed block laptop:hidden w-3/5 h-full top-0 bottom-0 transform transition-transform ease-in-out duration-500 -translate-x-full bg-black z-50 text-white ${
-						isNavOpen && '!translate-x-0'
-					}`}
-				>
-					<div className='border-b border-white px-5 pt-5 pb-3'>
-						<span className='text-lg'>NOVA ATHLETICS</span>
-					</div>
-					<div className='p-5 flex flex-col h-[90%] justify-between'>
-						<div className='flex flex-col'>
-							{navItems.map((item, index) => {
-								return (
-									<Link
-										onClick={() => setIsNavOpen(false)}
-										key={index}
-										className={`${linkStyle} mb-5`}
-										href={item.link}
-										target={item.target}
-									>
-										{item.label}
-									</Link>
-								);
-							})}
-						</div>
-						<div className='mt-auto -mb-5'>
-							<div className='flex space-x-4'>
-								{socials.map((item, index) => {
-									return (
-										<Link key={index} href={item.url} target='_blank'>
-											{item.icon}
-										</Link>
-									);
-								})}
+				<AnimatePresence>
+					{isNavOpen && (
+						<motion.nav
+							initial={{ translateX: -1000 }}
+							animate={{ translateX: 0 }}
+							exit={{ translateX: -1000 }}
+							transition={{ duration: 0.5, ease: 'easeInOut' }}
+							className={`fixed block laptop:hidden w-3/5 h-full top-0 bottom-0 bg-black z-50 text-white`}
+						>
+							<div className='border-b border-white px-5 pt-5 pb-3'>
+								<span className='text-lg'>NOVA ATHLETICS</span>
 							</div>
-						</div>
-					</div>
-				</div>
+							<div className='p-5 flex flex-col h-[90%] justify-between'>
+								<div className='flex flex-col'>
+									{navItems.map((item, index) => (
+										<Link
+											onClick={() => setIsNavOpen(false)}
+											key={index}
+											className={`${linkStyle} mb-5`}
+											href={item.link}
+											target={item.target}
+										>
+											{item.label}
+										</Link>
+									))}
+								</div>
+								<div className='mt-auto -mb-5'>
+									<div className='flex space-x-4'>
+										{socials.map((item, index) => (
+											<Link key={index} href={item.url} target='_blank'>
+												{item.icon}
+											</Link>
+										))}
+									</div>
+								</div>
+							</div>
+						</motion.nav>
+					)}
+				</AnimatePresence>
 			</div>
 		);
 }
