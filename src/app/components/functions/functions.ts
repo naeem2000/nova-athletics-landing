@@ -15,3 +15,16 @@ export const useShowNav = () => {
 
 	return { isNavOpen, setIsNavOpen };
 };
+
+//Reset hero animation
+export const ResetHeroAnimate = () => {
+	const [animate, setAnimate] = useState<number>(1);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setAnimate(0);
+		}, 2000);
+	}, []);
+
+	return { animate };
+};

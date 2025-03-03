@@ -1,7 +1,7 @@
+import { motionStyles } from './functions/constants';
 import { motion } from 'motion/react';
 import Button from './Button';
 import React from 'react';
-import { motionStyles } from './functions/constants';
 
 export default function SupportBrands() {
 	return (
@@ -12,7 +12,7 @@ export default function SupportBrands() {
 			<h2 className='text-center text-3xl laptop:text-6xl font-bold leading-tight'>
 				Support Local Brands Today
 			</h2>
-			<Button className='difference mt-7 text-base' text='See Brands' />
+			<Button className='mt-7 text-base' text='See Brands' />
 		</motion.div>
 	);
 }
