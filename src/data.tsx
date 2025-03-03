@@ -47,15 +47,15 @@ export const socials: SocialItems = [
 export const accordionItems: AccordionItems = [
 	{
 		heading: 'Do you deliver?',
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu vulputate lorem. Donec at metus quis felis feugiat facilisis nec in nisi. Cras maximus ut ex quis efficitur. Nam vitae tortor nunc. Donec consequat pellentesque tortor, vitae vulputate urna aliquam eu. Proin at sollicitudin justo. Suspendisse blandit rutrum elit, sed porta ligula volutpat ut.',
+		text: 'Nova Athletics does not handle deliveries directly. Instead, our partnered brands and suppliers manage the shipping process themselves. This allows for faster and more efficient delivery, as your order is sent straight from the brand to your doorstep.',
 	},
 	{
 		heading: 'Are your suppliers reputable?',
-		text: ' Vivamus ut lobortis dolor, sit amet gravida mi. Curabitur ac nisi quis justo iaculis tristique. Nunc non egestas velit. Suspendisse at mattis orci.',
+		text: 'Absolutely! We carefully select all our partnered brands and suppliers to ensure they align with our values. We work only with those who share our commitment to quality, affordability, and customer satisfaction, providing you with the best products at great prices.',
 	},
 	{
 		heading: 'Do you offer credit services?',
-		text: 'Nunc tortor lacus, euismod sit amet tincidunt et, efficitur sit amet eros. Maecenas non nunc eget nulla consequat tempor in quis nunc. Aenean sed orci nec mauris tempor facilisis quis id ex. Proin ultricies ipsum vitae cursus rutrum.',
+		text: 'Currently, we do not offer credit services. However, we are actively exploring options to introduce this in the future. Stay tuned for updates!',
 	},
 ];
 
