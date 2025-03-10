@@ -1,7 +1,9 @@
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { motionStyles } from './functions/constants';
 import ListingCard from './ListingCard';
 import { motion } from 'motion/react';
 import React from 'react';
+import '@splidejs/react-splide/css';
 
 export default function Explore() {
 	return (
@@ -15,24 +17,45 @@ export default function Explore() {
 						Where we find the perfect gym fit for your session.
 					</h2>
 				</div>
-				<div className='flex items-center justify-center mt-16'>
-					<div className='flex justify-between items-center w-full max-w-7xl flex-col tablet:flex-row'>
-						<ListingCard
-							hero={false}
-							img='/products/d99de486538239.5d9cafab0ccdb.png'
-							itemText='Green body-fit sweater'
-						/>
-						<ListingCard
-							hero={false}
-							img='/products/download.jpg'
-							itemText='baggy black sweater'
-						/>
-						<ListingCard
-							hero={false}
-							img='/products/hero.jpg'
-							itemText='baggy black sweater'
-						/>
-					</div>
+				<div className='mt-10'>
+					<Splide
+						options={{
+							arrows: true,
+							type: 'loop',
+							perPage: 3,
+							perMove: 1,
+							autoWidth:
+								typeof window !== 'undefined' && window.innerWidth < 750
+									? true
+									: false,
+							fixedWidth:
+								typeof window !== 'undefined' && window.innerWidth < 750
+									? true
+									: false,
+						}}
+					>
+						<SplideSlide>
+							<ListingCard
+								hero={false}
+								img='/products/d99de486538239.5d9cafab0ccdb.png'
+								itemText='Green body-fit sweater'
+							/>
+						</SplideSlide>
+						<SplideSlide>
+							<ListingCard
+								hero={false}
+								img='/products/download.jpg'
+								itemText='baggy black sweater'
+							/>
+						</SplideSlide>
+						<SplideSlide>
+							<ListingCard
+								hero={false}
+								img='/products/hero.jpg'
+								itemText='baggy black sweater'
+							/>
+						</SplideSlide>
+					</Splide>
 				</div>
 			</motion.div>
 		</div>
